@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import MenuIcon from '@mui/icons-material/Menu';
+import logo from "../assets/moon-phase-20.png"
 
 export default function ButtonAppBar() {
   return (
@@ -12,13 +13,13 @@ export default function ButtonAppBar() {
       <AppBar sx={{backgroundColor:"#20232a"}} position="static">
         <Toolbar>
           
-          <Typography component="div" sx={{ flexGrow: 1 }}>
-            My Website
-          </Typography>
+          <img></img>
           <Box sx={{display:{xs:'none',md:'flex'}}}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">About</Button>
-          <Button color="inherit">Contact</Button>
+          <Button> <img src={logo} style={{ width: 30, height: 30 }}/> </Button>
+          <Button color="inherit">Diary</Button>
+          <Button color="inherit">Place</Button>
+          <Button color="inherit">Gallery</Button>
+          <Button color="inherit">Playlist</Button>
           </Box>
           <Box sx={{display:{xs:'flex', md:'none'}}}>
             <Button sx={{color:'white'}}><MenuIcon /></Button>
